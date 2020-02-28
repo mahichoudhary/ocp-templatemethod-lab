@@ -18,6 +18,14 @@ public class CoffeeMaker {
         System.out.println(">>Serving coffee");
     }
 
+    public void prepareAmericanoCoffee(){
+        boilWater();
+        brewEspresso();
+        addIngredientsForAmericano();
+        finalTouchForAmericano();
+        System.out.println(">>Serving coffee");
+    }
+
     private void boilWater() {
         System.out.println("Boiling water");
     }
@@ -42,6 +50,14 @@ public class CoffeeMaker {
 
     private void finalTouchForCapuccino(){
         System.out.println("Top with milk foam");
+    }
+
+    private void addIngredientsForAmericano(){
+       System.out.println("Add more hot water");
+    }
+
+    private void finalTouchForAmericano(){
+        System.out.println("Add sugar and cream");
     }
 
 
